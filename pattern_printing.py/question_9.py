@@ -1,0 +1,6 @@
+"""
+Print this given pattern => 
+
+
+
+"""
