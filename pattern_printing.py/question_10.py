@@ -2,16 +2,18 @@
 Print this given pattern => 
 
           *
-        *   *
-      *   *   *
-    *   *   *   *
+         * *
+        * * *
+       * * * *
+      * * * * * 
     
 """
 
-n = 4
-for i in range(1, n+1):
-    for j in range(1, (n+1)-i):
-        print("  ", end=" ")
-    for k in range(1, i + 1):
+n = 5
+for rows in range(1, n+1):
+    for spaces in range(1, (n-rows)+1):
+        print(" ", end="")
+    for cols in range(1, rows+1):
         print("*", end=" ")
     print()
+   
